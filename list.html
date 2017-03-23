@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="toTop" content="true">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>我的博客</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--动画css-->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<!--<link rel="stylesheet" type="text/css" href="css/audioplayer.css" />-->
+		<!-- Custom styles for this template -->
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/myaudio.css" />
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<SCRIPT language=javascript>
+			<!-- 
+			window.onerror = function() {
+					return true;
+				}
+				// -->
+		</SCRIPT>
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]>
+	<script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="js/ie-emulation-modes-warning.js"></script>
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	</head>
+
+	<body>
+		<!-- header start -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container container-m">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">烟雨弥漫了江南</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+					<a class="navbar-brand" href="index.html"><img id="admin_resume" src='images/logo.png' class="bounceIn animated" data-toggle="tooltip" data-placement="bottom" title='烟雨弥漫了江南'/></a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="right_bg_img">
+							<a href="index.html">
+								<p class="aspan1">首页</p>
+							</a>
+						</li>
+						<li class="right_bg_img">
+							<a href="list.html">
+								<p class="aspan1">PHP</p>
+							</a>
+						</li>
+						<li class="right_bg_img">
+							<a href="list.html">
+								<p class="aspan1">JavaScript</p>
+							</a>
+						</li>
+						<li class="multilevel">
+							<a href='#' id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								随笔
+								<i class="fa fa-chevron-down jtnfz"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li>
+									<a href="#">杂谈</a>
+								</li>
+								<li>
+									<a href="#">心情</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<!-- header end -->
+		<!-- banner start -->
+		<div class="banner_seek">
+			<canvas id="canvas" class="canvas"></canvas>
+			<div class="seek">
+				<div class="yulu rollIn animated">
+					<h3 class="site__title">心之所向，一往而深</h3>
+					<p class="site__title">Heart's desire , one to and deep</p>
+				</div>
+				<div class="style_1 seek_k">
+					<form method="get" id="searchform" action="http://sc.chinaz.com/">
+						<fieldset>
+							<input id="s" name="s" type="text" placeholder="请输入关键字..." class="text_input" />
+							<input name="submit" type="submit" value='' />
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+		<!-- main start -->
+		<div class='main'>
+			<div class="container animated fadeInRight">
+				<div class="col-md-12 quotations">
+					<div class="alert alert-warning alert-dismissible" role="alert">
+						<div class="quotations_left"></div>
+						<div class="quotations_right"></div>
+						<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<strong>语录：</strong> 心若不动,风又奈何。你若不伤,岁月无恙。
+					</div>
+				</div>
+				<!--主体左侧 start-->
+				<div class="col-md-8">
+					<!--循环div-->
+					<div class="panel panel-default news news-list">
+						<div class="panel-heading">
+							<ol class="breadcrumb">
+								<li>
+									<a href="index.html">首页</a>
+								</li>
+								<li>
+									<a href="#">PHP</a>
+								</li>
+							</ol>
+						</div>
+						<div class="panel-body">
+							<ul class="col-md-12">
+								<li class="col-md-12 active_li active_li_none">
+									<div class="right-border"></div>
+									<div class="bottom-border"></div>
+									<div class="pull-left active_img">
+										<a href="active.html" target="_blank"><img src="images/2.jpg" alt="刘孟磊的博客开源emlog模板主题J2更新：1.2版发布"></a>
+									</div>
+									<div class="active_init pull-left">
+										<h2 class="panel-title active_title"><a href="active.html" target="_blank">刘孟磊的博客开源emlog模板主题J2更新刘孟磊的博客开源emlog模板主题J2更新：1.2版发布qq</a></h2>
+										<p class="active_tags"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;
+											<a href="#">javascript</a>&nbsp;
+											<i class="fa fa-user" aria-hidden="true"></i>&nbsp;刘孟磊&nbsp;
+											<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(7)&nbsp;
+											<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;
+											<a href="#">评论(7)</a>&nbsp;
+											<i class="fa fa-hourglass-2" aria-hidden="true"></i>&nbsp;2天前&nbsp;
+										</p>
+										<p class="active_content">刘孟磊的博客开源emlog模板 主题J2更新：1.2版发布</p>
+									</div>
+								</li>
+								<li class="col-md-12 active_li">
+									<div class="right-border"></div>
+									<div class="bottom-border"></div>
+									<div class="pull-left active_img">
+										<a href="active.html" target="_blank"><img src="images/1.jpg" alt="全国各省、市、县、镇、村的mysql数据库和JSON格式数据"></a>
+									</div>
+									<div class="active_init pull-left">
+										<h2 class="panel-title active_title"><a href="active.html" target="_blank">全国各省、市、县、镇、村的mysql数据库和JSON格式数据</a></h2>
+										<p class="active_tags">
+											<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;
+											<a href="/Article/cate/id/26.html">mysql</a>&nbsp;
+											<i class="fa fa-user" aria-hidden="true"></i>&nbsp;刘孟磊&nbsp;
+											<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+											<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;
+											<a href="#">评论(666)</a>&nbsp;
+											<i class="fa fa-hourglass-2" aria-hidden="true"></i>&nbsp;2天前&nbsp;
+										</p>
+										<p class="active_content">11111111111111111111111111111111两年前求爷爷告奶奶的到处找这种全国各省、市、求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许两年前求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许两年前求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许多网络上现成的网页数据还不知道如何自己抓取制作成mysql库；现在想想那个时候的苦逼人生，想必现在还有不少人在找这种精确到村的全国各地的地址统计数据，现在共享出来，但愿不再出现两年前我的...</p>
+									</div>
+								</li>
+								<li class="col-md-12 active_li">
+									<div class="right-border"></div>
+									<div class="bottom-border"></div>
+									<div class="pull-left active_img">
+										<a href="#" target="_blank"><img src="images/2.jpg" alt="刘孟磊的博客开源emlog模板主题J2更新：1.2版发布"></a>
+									</div>
+									<div class="active_init pull-left">
+										<h2 class="panel-title active_title"><a href="active.html" target="_blank">刘孟磊的博客开源emlog模板主题J2更新刘孟磊的博客开源emlog模板主题J2更新：1.2版发布qq</a></h2>
+										<p class="active_tags"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;
+											<a href="#">javascript</a>&nbsp;
+											<i class="fa fa-user" aria-hidden="true"></i>&nbsp;刘孟磊&nbsp;
+											<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(7)&nbsp;
+											<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;
+											<a href="#">评论(7)</a>&nbsp;
+											<i class="fa fa-hourglass-2" aria-hidden="true"></i>&nbsp;2天前&nbsp;
+										</p>
+										<p class="active_content">刘孟磊的博客开源emlog模板 主题J2更新：1.2版发布</p>
+									</div>
+								</li>
+								<li class="col-md-12 active_li">
+									<div class="right-border"></div>
+									<div class="bottom-border"></div>
+									<div class="pull-left active_img">
+										<a href="active.html" target="_blank"><img src="images/1.jpg" alt="全国各省、市、县、镇、村的mysql数据库和JSON格式数据"></a>
+									</div>
+									<div class="active_init pull-left">
+										<h2 class="panel-title active_title"><a href="active.html" target="_blank">全国各省、市、县、镇、村的mysql数据库和JSON格式数据</a></h2>
+										<p class="active_tags">
+											<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;
+											<a href="/Article/cate/id/26.html">mysql</a>&nbsp;
+											<i class="fa fa-user" aria-hidden="true"></i>&nbsp;刘孟磊&nbsp;
+											<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+											<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;
+											<a href="#">评论(666)</a>&nbsp;
+											<i class="fa fa-hourglass-2" aria-hidden="true"></i>&nbsp;2天前&nbsp;
+										</p>
+										<p class="active_content">两年前求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许两年前求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许两年前求爷爷告奶奶的到处找这种全国各省、市、县的数据时非常郁闷，那个时候对PHP还不甚了解，许多网络上现成的网页数据还不知道如何自己抓取制作成mysql库；现在想想那个时候的苦逼人生，想必现在还有不少人在找这种精确到村的全国各地的地址统计数据，现在共享出来，但愿不再出现两年前我的...</p>
+									</div>
+								</li>
+								<li class="col-md-12 active_li">
+									<nav>
+										<ul class="pager">
+											<li>
+												<a href="#">Previous</a>
+											</li>
+											<li>
+												<a href="#">Next</a>
+											</li>
+										</ul>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--主体右侧 start-->
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="myAudio">
+			<div class="audio-title-div">
+				<div class="audio-img-vessel">
+					<img src="images/taile.jpg" class="audio-img" />
+				</div>
+
+				<div class="audio-title">
+					<div class="audio-title-name">一入电音深似海&nbsp;|&nbsp;人声&nbsp;&amp;&nbsp;电音</div>
+				</div>
+			</div>
+			<div class="audioplayer">
+				<div class="audioplayer-plan" id='plan'>
+					<div class="progress"></div>
+					<div class="buffer"></div>
+				</div>
+				<div class="audioplayer-button-vessel">
+					<div class="audioplayer-time">-00:00</div>
+					<div class="audioplayer-button">
+						<div id="prev" class="fa fa-step-backward" data-action="prev"></div>
+						<div id="pause" class="fa fa-pause hidden" data-action="pause"></div>
+						<div id="play" class="fa fa-play" data-action="play"></div>
+						<div id="next" class="fa fa-step-forward" data-action="next"></div>
+					</div>
+					<div class="audioplayer-list">
+						<div class="fa fa-reorder" id="reorder" data-toggle="tooltip" data-placement="left" title="列表循环" name="列表循环"></div>
+						<div class="fa fa-volume-up volume" id="Volume" data-toggle="tooltip" data-placement="left" title="音量"></div>
+						<div class="volume_wrap hidden">
+							<div class="volume_bar">
+								<div class="volume_now"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+			<audio src="" controls="controls" class="hidden-audio" id="my_audio">
+				<p style="color: #FFFFFF;">您的浏览器不支持HTML5播放器呢！赶紧换一个最新的呗^_^.</p>
+			</audio>
+		</div>
+						</div>
+					</div>
+					<!--热门文章 start-->
+					<div class="panel panel-default hot_article ">
+						<div class="panel-heading hot_article_name"><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;热门文章</div>
+						<div class="panel-body hot_new_article">
+							<ul class="col-xs-12">
+								<li class="hot_active_li hot_active_li1">
+									<a href="list.html">
+										<h2 class="hot_active_title">PHP如何将XML转换为数组</h2>
+									</a>
+									<p class="hot_active_tags">
+										&nbsp;2016-8-30&nbsp;
+										<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+										<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;评论(666)&nbsp;
+									</p>
+								</li>
+								<li class="hot_active_li">
+									<a href="list.html">
+										<h2 class="hot_active_title">全国各省、市、县、镇、村的mysql数据库和JSON格式数据</h2></a>
+									<p class="hot_active_tags">
+										&nbsp;2016-8-30&nbsp;
+										<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+										<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;评论(666)&nbsp;
+									</p>
+								</li>
+								<li class="hot_active_li">
+									<a href="list.html">
+										<h2 class="hot_active_title">PHP如何将XML转换为数组PHP如何将XML转换为数组</h2></a>
+									<p class="hot_active_tags">
+										&nbsp;2016-8-30&nbsp;
+										<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+										<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;评论(666)&nbsp;
+									</p>
+								</li>
+								<li class="hot_active_li">
+									<a href="list.html">
+										<h2 class="hot_active_title">PHP如何将XML转换为数组</h2></a>
+									<p class="hot_active_tags">
+										&nbsp;2016-8-30&nbsp;
+										<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;浏览(888)&nbsp;
+										<i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;评论(666)&nbsp;
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--热门文章end-->
+					<!--标签云start-->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-tags" aria-hidden="true"></i>&nbsp;热门标签</h3>
+						</div>
+						<div class="panel-body tags_yun" id="tagscloud">
+							<a href="#"><span class="label label-default">JavaScript</span></a>
+							<a href="#"><span class="label label-primary">PHP</span></a>
+							<a href="#"><span class="label label-success">Mysql</span></a>
+							<a href="#"><span class="label label-info">ThinkPHP</span></a>
+							<a href="#"><span class="label label-warning">随笔</span></a>
+							<a href="#"><span class="label label-danger">CSS3</span></a>
+							<a href="#"><span class="label label-default">JavaScript</span></a>
+							<a href="#"><span class="label label-primary">PHP</span></a>
+							<a href="#"><span class="label label-success">Mysql</span></a>
+							<a href="#"><span class="label label-info">ThinkPHP</span></a>
+							<a href="#"><span class="label label-warning">随笔</span></a>
+							<a href="#"><span class="label label-danger">CSS3</span></a>
+							<a href="#"><span class="label label-default">JavaScript</span></a>
+							<a href="#"><span class="label label-primary">PHP</span></a>
+							<a href="#"><span class="label label-success">Mysql</span></a>
+							<a href="#"><span class="label label-info">ThinkPHP</span></a>
+							<a href="#"><span class="label label-warning">随笔</span></a>
+							<a href="#"><span class="label label-danger">CSS3</span></a>
+						</div>
+					</div>
+					<!--标签云end-->
+					<!--标签云start-->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><i class="fa fa-link" aria-hidden="true"></i>&nbsp;友情链接</h3>
+						</div>
+						<div class="panel-body friendly_link">
+							<a href="#">江南博客</a>
+							<a href="#">春风博客</a>
+						</div>
+					</div>
+					<!--标签云end-->
+				</div>
+				<!--主体左侧 end-->
+			</div>
+		</div>
+		<!-- main end -->
+		<!-- footer start -->
+		<footer>
+			<p>Copyrights &copy; 2016-2017
+			<a href="http://www.lmlblog.net">烟雨弥漫了江南</a> , All rights reserved. 皖ICP备15015582号-1&nbsp;&nbsp;<a href="#">网站地图</a></p>
+		</footer>
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="./js/banner.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/tagscloud.js"></script>
+		<script src="js/toTop.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script src="js/browserVereions.js"></script>
+		<script type="text/javascript" src="js/list.js" ></script>
+		<script type="text/javascript" src="js/myaudio.js" ></script>
+		<!-- footer end -->
+		<script type="text/javascript">
+			$(function(){
+				$("[data-toggle='tooltip']").tooltip();
+				$('.friendly_link a').hover(function(){
+					$(this).attr('class','wobble animated');
+				},function(){
+					$(this).removeAttr('class')
+				});
+				$('.news .active_li').hover(function(){
+					$(this).children('.right-border').css('height','100%');
+					$(this).children('.bottom-border').css('width','100%');
+				},function(){
+					$(this).children('.right-border').css('height','0px');
+					$(this).children('.bottom-border').css('width','0px');
+				});
+				$('.Stick .active_li').hover(function(){
+					$(this).children('.active_bottom_border').css('width','100%');
+				},function(){
+					$(this).children('.active_bottom_border').css('width','0px');
+				});
+			},jQuery())
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//		var shebei=screen.width;
+				//		if(shebei>=768){
+				var kuandu = document.body.clientWidth;
+				if(kuandu > 1024) {
+					$("body").append("<script type='text/javascript' src='js/header.js'><script>")
+					$("body").append("<script type='text/javascript' src='js/divscroll.js'><script>")
+					$('body').perfectScrollbar();//滚动条优化
+				}
+				//		}
+				$(window).resize(function() {
+					//检测浏览器窗口改变
+					//			var shebei=screen.width;
+					//			if(shebei>=768){
+					var kuandu = document.body.clientWidth;
+					if(kuandu > 1024) {
+						$("body").append("<script id='seek' type='text/javascript' src='js/header.js'><script>")
+						$("body").append("<script type='text/javascript' src='js/divscroll.js'><script>")
+						$('body').perfectScrollbar();//滚动条优化
+					} else {
+						 window.location.reload()
+					}
+					//			}
+				});
+			})
+		</script>
+	</body>
+
+</html>

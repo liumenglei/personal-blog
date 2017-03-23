@@ -1,0 +1,218 @@
+/*播放器主体*/
+.myAudio{
+	width: 100%;
+	min-width: 197px;
+	margin: auto auto;
+	height: auto;
+	overflow: auto;
+	border: 5px solid #262626;
+	border-radius: 0px;
+	background: #2F3238;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+/*歌曲信息主体start*/
+.audio-title-div{
+	width: 100%;
+	height:auto;
+	position: relative;
+}
+/*图片容器*/
+.audio-img-vessel {
+	width: 100%;
+	max-height: 191px;
+	text-align: center;
+	overflow: hidden;
+	background: #666666;
+}
+
+
+/*图片*/
+.audio-img {
+	max-height: 191px;
+	/*margin-left: -20%;*/
+	transform: scale(1.0);
+	transition: all 0.5s ease 0s;
+	-webkit-transform: scale(1.0);
+	-webkit-transform: all 0.5s ease 0s;
+}
+
+.audio-img:hover {
+	transform: scale(1.3);
+	transition: all 1s ease 0s;
+	-webkit-transform: scale(1.3);
+	-webkit-transform: all 1s ease 0s;
+}
+.audio-title{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height:32px;
+	line-height: 32px;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.6);
+	color: #E8E8E8;
+	z-index: 100;
+}
+.audio-title-name{
+	width: 100%;
+	height:32px;
+	line-height: 32px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+/*歌曲信息主体end*/
+/*控件按钮主体start*/
+.audioplayer{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	background: #111111;
+	/*position: relative;*/
+}
+/*进度条*/
+.audioplayer .audioplayer-plan{
+	width: 100%;
+	height: 5px;
+	border:#E8E8E8;
+	background: #2F3238;
+	position: relative;
+	cursor: pointer;
+}
+.audioplayer .audioplayer-plan .progress{
+	width: 0px;
+	height: 5px;
+	background-color: #E74D3C;
+	border-radius: 0px;
+	position: absolute;
+	z-index: 11;
+}
+.audioplayer .audioplayer-plan .buffer{
+	width: 0px;
+	height: 5px;
+	background-color: #C3C8CD;
+	/*border-radius: 3px;*/
+	position: absolute;
+	z-index: 1;
+}
+.audioplayer .audioplayer-button-vessel{
+	width: 100%;
+	height: 33px;
+}
+.audioplayer .audioplayer-time{
+	width: 20%;
+	text-align: left;
+	line-height: 33px;
+	padding-left: 5%;
+	color: #E8E8E8;
+	float: left;
+	/*background: red;*/
+}
+.audioplayer .audioplayer-button{
+	width: 60%;
+	float: left;
+	text-align: center;
+	line-height: 33px;
+	/*background: blue;*/
+	color: #C3C8CD;
+}
+.audioplayer .audioplayer-button div:hover{
+	cursor: pointer;
+	color: #E74D3C;
+}
+.play{
+	display: inline-block;
+	margin: 0px 10px;
+}
+.audioplayer .audioplayer-list{
+	width: 20%;
+	float: left;
+	text-align: right;
+	color: #C3C8CD;
+	padding-right: 5%;
+	line-height: 33px;
+	/*background: yellow;*/
+}
+.audioplayer .audioplayer-list div:hover{
+	cursor: pointer;
+	color: #E74D3C;
+}
+
+/*音量调节*/
+.volume{
+	/*margin-right: 16px;*/
+	color: #E74D3C;
+}
+.volume_wrap{
+	width: 15px;
+	height: 90px;
+	position: absolute;
+	right: 5%;
+	bottom: 28px;
+	z-index: 101;
+	cursor: pointer;
+	border-radius: 9px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #D9D9D9;
+}
+.volume_bar{
+	width: 9px;
+	height: 80px;
+	background-color: #D5D5D5;
+	position: absolute;
+	border-radius: 9px;
+	left: 3px;
+	top: 5px;
+}
+.volume_now{
+	width: 9px;
+	height: 64px;
+	background-color: #E74D3C;
+	position: absolute;
+	bottom: 0;
+	border-radius: 9px;
+}
+/*控件按钮主体end*/
+
+.song-sets{
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	overflow: auto;
+	overflow-x: hidden;
+	background: #EEEEEE;
+	
+}
+.song-sets .list-box{
+	width:100%;
+	height: auto;
+	list-style: none;
+}
+.song-sets .list-box .z-sel{
+	float: left;
+	width: 100%;
+	line-height: 32px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.song-sets .list-box .pitch-on{
+	border-left: 3px solid #EF3F52;
+}
+/*隐藏原生audio标签*/
+
+.hidden-audio {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+
+.hidden{
+	display: none !important;
+}
