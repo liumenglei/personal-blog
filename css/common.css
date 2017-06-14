@@ -75,7 +75,7 @@ a:hover {
 
 @font-face {
 	font-family: myFont;
-	src: url('fonts/hzgb.TTF');
+	src: url('../fonts/hzgb.TTF');
 }
 
 .site__title {
