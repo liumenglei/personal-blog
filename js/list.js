@@ -12,7 +12,7 @@ var playList = [
 			'artist' : '陈绮贞',
 			'musicName' : '旅行的意义',
 			'musicAlbum' : '<旅行的意义> 2004',
-			'musicURL' : 'http://file.dengo.org/music/cqz_lxdyy.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/cqz.jpg',
 			'musicTime' : '245'
 		},
@@ -20,7 +20,7 @@ var playList = [
 			'artist' : '陈绮贞',
 			'musicName' : '华丽的冒险',
 			'musicAlbum' : '<太阳> 2005',
-			'musicURL' : 'http://file.dengo.org/music/cqz_hldmx.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/cqz.jpg',
 			'musicTime' : '331'
 		},
@@ -28,7 +28,7 @@ var playList = [
 			'artist' : '陈奕迅',
 			'musicName' : '多少',
 			'musicAlbum' : '<上五楼的快活> 2010',
-			'musicURL' : 'http://file.dengo.org/music/cyx_ds.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/cyx.jpg',
 			'musicTime' : '297'
 		},
@@ -36,7 +36,7 @@ var playList = [
 			'artist' : '陈奕迅',
 			'musicName' : '给你',
 			'musicAlbum' : '<上五楼的快活> 2010',
-			'musicURL' : 'http://file.dengo.org/music/cyx_gn.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/cyx.jpg',
 			'musicTime' : '314'
 		},
@@ -52,7 +52,7 @@ var playList = [
 			'artist' : '梁静茹',
 			'musicName' : '最想环游的世界',
 			'musicAlbum' : '<恋爱的力量> 2003',
-			'musicURL' : 'http://file.dengo.org/music/ljr_zxhydsj.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/ljr.jpg',
 			'musicTime' : '283'
 		},
@@ -60,7 +60,7 @@ var playList = [
 			'artist' : '王力宏',
 			'musicName' : '你不知道的事',
 			'musicAlbum' : '<火力全开> 2011',
-			'musicURL' : 'http://file.dengo.org/music/wlh_nbzdds.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/wlh.jpg',
 			'musicTime' : '280'
 		},
@@ -68,7 +68,7 @@ var playList = [
 			'artist' : '王力宏',
 			'musicName' : '需要人陪',
 			'musicAlbum' : '<十八般武艺> 2010',
-			'musicURL' : 'http://file.dengo.org/music/wlh_xyrp.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/wlh.jpg',
 			'musicTime' : '252'
 		},
@@ -76,7 +76,7 @@ var playList = [
 			'artist' : '张惠妹',
 			'musicName' : '记得',
 			'musicAlbum' : '<真实> 2001',
-			'musicURL' : 'http://file.dengo.org/music/zhm_jd.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/zhm.jpg',
 			'musicTime' : '290'
 		},
@@ -84,7 +84,7 @@ var playList = [
 			'artist' : '张惠妹',
 			'musicName' : '我最亲爱的',
 			'musicAlbum' : '<你在看我吗> 2011',
-			'musicURL' : 'http://file.dengo.org/music/zhm_wzqad.mp3',
+			'musicURL' : 'images/taile.jpg',
 			'avatarURL' : 'avatar/zhm.jpg',
 			'musicTime' : '285'
 		}
